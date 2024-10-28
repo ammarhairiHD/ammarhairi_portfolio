@@ -2,6 +2,7 @@ import {
   Left_Social_Media,
   Right_Social_Media,
 } from "./constants/Social_Media";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -21,9 +22,11 @@ export default function Home() {
             </li>
           ))}
         </ul>
-        <img
+        <Image
           src="/ammar/ammar2_portfolio.webp"
           alt="ammar_hairi"
+          width={500} // Adjust width based on design requirements
+          height={300} // Adjust height based on design requirements
           className=" w-2/6 sm:w-72 md:w-72 h-auto rounded-xl animate-fade-in"
         />
         <ul className=" flex flex-col gap-12 md:gap-5 justify-center md:justify-around">

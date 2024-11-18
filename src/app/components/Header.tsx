@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Header_Links } from "../constants/HeaderLinks";
 import { RiMenuLine, RiCloseLine } from "@remixicon/react";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Header() {
   const [isToggle, setIsToggle] = useState(false);
@@ -15,11 +16,17 @@ export default function Header() {
     <nav className="fixed flex justify-between px-4 py-2 w-full h-24 bg-bg-color z-50">
       <Link
         href="/"
-        className="border-l-4 border-l-main-color border-t-4 border-t-main-color px-4 py-2"
+        className="border-l-4 border-l-main-color border-t-4 border-t-main-color  inline-block"
       >
-        <h1 className="font-extrabold uppercase text-second-color">
-          Ammar <br /> Hairi
-        </h1>
+        <div className="relative w-52 h-16">
+          <Image
+            src="/logo_nobg.png"
+            alt="Ammar Hairi"
+            fill
+            style={{ objectFit: "contain", objectPosition: "left center" }}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        </div>
       </Link>
       <div className="w-screen">
         <ul className="hidden h-full gap-12 md:flex md:pt-5 md:flex-row md:justify-center">

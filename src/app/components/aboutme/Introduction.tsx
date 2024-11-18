@@ -15,8 +15,8 @@ export default function Introduction() {
         <Image
           src="/ammar/ammar_portfolio.webp"
           alt="ammar"
-          width={400} // Adjust width based on design requirements
-          height={300} // Adjust height based on design requirements
+          width={400} 
+          height={300} 
           className=" border-2 border-main-color mt-2"
         />
       </div>

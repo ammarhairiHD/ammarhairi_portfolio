@@ -50,7 +50,7 @@ export default function Home() {
       <h2 className="text-lg md:text-2xl md:font-semibold mt-1 animate-fade-in">
         FULL STACK DEVELOPER
       </h2>
-      <p className="text-center mt-2 font-medium md:text-center md:w-2/5 typewriter">
+      <p className="text-center mt-2 font-medium md:text-center typewriter">
         My mission is to make the world a safer place. Lately, I’ve seen too
         much news about crime, scams, and cruelty. As a child, the world felt
         pure—now, at 23, I see its harshness. But I believe change is possible.

@@ -12,6 +12,10 @@ export default function Header() {
     setIsToggle(!isToggle);
   };
 
+  const closeNavbar = () => {
+    setIsToggle(false);
+  };
+
   return (
     <nav className="fixed flex justify-between px-4 py-2 w-full h-24 bg-bg-color z-50">
       <Link
@@ -43,6 +47,7 @@ export default function Header() {
         </ul>
       </div>
 
+      {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center">
         <button
           className="inline-flex items-center justify-center p-2 rounded-md text-main-color hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
@@ -56,14 +61,16 @@ export default function Header() {
         </button>
       </div>
 
+      {/* Mobile Menu */}
       {isToggle && (
-        <div className="md:hidden">
-          <ul className="flex flex-col gap-7 bg-bg-color w-full p-5 relative">
+        <div className="absolute top-24 left-0 w-full bg-bg-color">
+          <ul className="flex flex-col items-center gap-7 w-full p-5">
             {Header_Links.map((hl) => (
               <Link
                 href={hl.href}
                 key={hl.title}
                 className="text-gray-200 hover:text-main-color"
+                onClick={closeNavbar}
               >
                 <span className="text-main-color mr-2">{"//"}</span>
                 {hl.title}

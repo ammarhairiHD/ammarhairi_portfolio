@@ -30,6 +30,11 @@ section {
   height: 70vh;
 }
 
+.home-section {
+  height: auto; /* Adjust the height only for this section */
+  min-height: 70vh; /* Ensure it still takes at least 70% of the viewport height */
+}
+
 /*animations*/
 
 @keyframes fadeIn {

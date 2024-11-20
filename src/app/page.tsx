@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center px-5">
+    <section className="flex flex-col items-center px-5 home-section">
       <div className=" flex flex-row gap-3 justify-center">
         <ul className=" flex flex-col gap-12 md:gap-5 justify-center md:justify-around">
           {Left_Social_Media.map((lsm) => (

@@ -4,7 +4,7 @@ export const ContactMe = [
   {
     icon: <RiMailSendFill size={100} />,
     key: "Email",
-    mailto: "mailto:halusinasibyammar@gmail.com",
+    mailto: "mailto:ammarhairi@hallucinationsdigital.com",
   },
   {
     icon: <RiWhatsappFill size={100} />,

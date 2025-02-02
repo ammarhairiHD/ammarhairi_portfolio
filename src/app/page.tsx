@@ -53,7 +53,7 @@ export default function Home() {
       <p className="text-center mt-2 font-medium md:text-center md:w-2/5 typewriter">
         My mission is to make the world a safer place. Lately, I’ve seen too
         much news about crime, scams, and cruelty. As a child, the world felt
-        pure—now, at 23, I see its harshness. But I believe change is possible.
+        pure—now, at 24, I see its harshness. But I believe change is possible.
         People can change. The world can change.{""} I’m rooting for the real
         heroes—the brave souls making a difference.
       </p>
